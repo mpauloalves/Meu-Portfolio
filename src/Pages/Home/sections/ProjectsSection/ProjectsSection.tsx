@@ -13,7 +13,7 @@ const ProjectsSection: React.FC = () => {
         {
             title: "Project Exemple",
             subtitle: "jan 2025",
-            srcImg: "/src/assets/images/devStage.png",
+            srcImg: "/assets/images/devStage.png",
             description: "Online event recommendation software using the most popular framework in the React ecosystem, Next.js.",
             technologies: "Technologies: React, Next.js, Vite + TypeScript, Tailwind, Zod",
             websiteURL: "/",
@@ -22,7 +22,7 @@ const ProjectsSection: React.FC = () => {
         {
             title: "Project Exemple",
             subtitle: "fev 2025",
-            srcImg: "/src/assets/images/crud.png",
+            srcImg: "/assets/images/crud.png",
             description: "This is a FullStack CRUD project developed using Node.js, React.js, and MySQL. The application allows for the creation, reading, updating, and deleting of users, integrating the frontend with the backend and the database.",
             technologies: "Technologies: React, Node.js, Express, MySQL",
             websiteURL: "/",
