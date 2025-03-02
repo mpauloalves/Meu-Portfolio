@@ -10,10 +10,12 @@ import CV from "../../../../assets/pdfs/Open.pdf"
 const HeroSection: React.FC = () => {
 
     const StyledImg = styled("img")(({ theme }) => ({
-        width: "80%",
-        border: `1px solid ${theme.palette.primary.contrastText}`,
-        borderRadius: "50%",
-        position: "relative"
+    width: "300px", 
+    height: "300px",
+    border: `2px solid ${theme.palette.primary.contrastText}`,
+    borderRadius: "50%",
+    objectFit: "cover", 
+    position: "relative"
     }));
 
     const StyledHero = styled("div")(({ theme }) => ({
@@ -73,9 +75,9 @@ const HeroSection: React.FC = () => {
                         </Grid>
                         <Grid item xs={12} md={7}>
                             <Typography color="primary.contrastText" variant="h1" pb={2} textAlign="center">
-                                Adriana Saty
+                                Marcos Paulo Alves
                             </Typography>
-                            <Typewriter text="I'm a Software Engineer" delay={120} variant="h2" color="primary.contrastText" />
+                            <Typewriter text="Full Stack Developer  Bringing Ideas to Life" delay={120} variant="h2" color="primary.contrastText" />
                             <Box mt={3}>
                                 <Grid container spacing={3} display="flex" justifyContent="center">
                                     <Grid item xs={10} md={4}>

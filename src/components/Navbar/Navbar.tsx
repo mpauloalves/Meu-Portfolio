@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -35,6 +36,8 @@ export const StyledDesktopToolbar = styled(Toolbar)(({ theme }) => ({
 
 export default function Navbar() {
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+    const [showAppBar, setShowAppBar] = React.useState(true);
+    const [lastScrollY, setLastScrollY] = React.useState(0);
 
     const handleMenu = (event: React.MouseEvent<HTMLElement>) => {
         setAnchorEl(event.currentTarget);
@@ -52,9 +55,27 @@ export default function Navbar() {
         }
     };
 
+    const handleScroll = () => {
+        if (window.scrollY < lastScrollY - 50) {
+            
+            setShowAppBar(true);
+        } else if (window.scrollY > lastScrollY + 50) {
+        
+            setShowAppBar(false);
+        }
+        setLastScrollY(window.scrollY);
+    };
+
+    React.useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, [handleScroll, lastScrollY]);
+
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="absolute">
+            <AppBar position="fixed" sx={{ top: showAppBar ? 0 : '-64px', transition: 'top 0.3s' }}>
                 <StyledMobileToolbar>
                     <IconButton
                         size="large"

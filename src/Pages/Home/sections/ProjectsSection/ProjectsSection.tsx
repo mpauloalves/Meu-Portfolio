@@ -12,40 +12,23 @@ const ProjectsSection: React.FC = () => {
     const projects = [
         {
             title: "Project Exemple",
-            subtitle: "Jul 2023 - Dez 2023",
-            srcImg: "/src/assets/images/project-trello.png",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porta semper velit vel rutrum. Aliquam vulputate, nisi eget tristique mattis, nisi sem faucibus eros, a auctor felis sem ut mauris. Phasellus a ultrices elit. Curabitur ut diam eu orci auctor pretium.",
-            technologies: "Technologies: JavaScript, HTML, CSS, Canvas Graphics",
-            websiteURL: "https://trello.com/",
-            codeURL: "https://github.com/",
+            subtitle: "jan 2025",
+            srcImg: "/src/assets/images/devStage.png",
+            description: "Online event recommendation software using the most popular framework in the React ecosystem, Next.js.",
+            technologies: "Technologies: React, Next.js, Vite + TypeScript, Tailwind, Zod",
+            websiteURL: "/",
+            codeURL: "https://github.com/mpauloalves/DevStageweb",
         },
         {
             title: "Project Exemple",
-            subtitle: "Jul 2023 - Dez 2023",
-            srcImg: "/src/assets/images/project-financas.png",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porta semper velit vel rutrum. Aliquam vulputate, nisi eget tristique mattis, nisi sem faucibus eros, a auctor felis sem ut mauris. Phasellus a ultrices elit. Curabitur ut diam eu orci auctor pretium.",
-            technologies: "Technologies: JavaScript, HTML, CSS, Canvas Graphics",
-            websiteURL: "https://trello.com/",
-            codeURL: "https://github.com/",
+            subtitle: "fev 2025",
+            srcImg: "/src/assets/images/crud.png",
+            description: "This is a FullStack CRUD project developed using Node.js, React.js, and MySQL. The application allows for the creation, reading, updating, and deleting of users, integrating the frontend with the backend and the database.",
+            technologies: "Technologies: React, Node.js, Express, MySQL",
+            websiteURL: "/",
+            codeURL: "https://github.com/mpauloalves/CRUD",
         },
-        {
-            title: "Project Craze Maze",
-            subtitle: "Jul 2019 - May 2019",
-            srcImg: "/src/assets/images/project1-craze-maze.gif",
-            description: "Game to escape the maze, but not only that. An algorithm has been created that randomly generates a new maze each time the game is started. In this game, the user can use the keyboard keys to move until they find the flag and win the game",
-            technologies: "Technologies: JavaScript, HTML, CSS, Canvas Graphics",
-            websiteURL: "https://adrianasaty.github.io/ironhack-project1-craze-maze/index.html",
-            codeURL: "https://github.com/AdrianaSaty/ironhack-project1-craze-maze",
-        },
-        {
-            title: "Project Blotting",
-            subtitle: "Jul 2019 - May 2019",
-            srcImg: "/src/assets/images/project2-blotting.png",
-            description: "Game to escape the maze, but not only that. An algorithm has been created that randomly generates a new maze each time the game is started. In this game, the user can use the keyboard keys to move until they find the flag and win the game",
-            technologies: "Technologies: JavaScript, HTML, CSS, Canvas Graphics",
-            websiteURL: "https://adrianasaty.github.io/ironhack-project1-craze-maze/index.html",
-            codeURL: "https://github.com/AdrianaSaty/ironhack-project1-craze-maze",
-        },
+       
     ]
 
     return (
